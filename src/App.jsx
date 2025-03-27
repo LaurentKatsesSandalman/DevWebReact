@@ -44,7 +44,6 @@ function App() {
   return (
     <main>
       <h1>MarmiWild</h1>
-      {/* pass the variable foodItems as props to MenuList component */}
       <MenuList foodItems={foodItems} />
     </main>
   );

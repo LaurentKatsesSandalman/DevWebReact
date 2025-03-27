@@ -5,7 +5,6 @@ function MenuList({ foodItems }) {
 
   return (
     <>
-      {/* render a MenuItem component for each element of the foodItems array */}
       {foodItems.map((menuItem) => (
         <MenuItem key={menuItem.id} {...menuItem} />))}
     </>
@@ -13,5 +12,3 @@ function MenuList({ foodItems }) {
 }
 
 export default MenuList;
-
-/*itemName={menuItem.itemName} description={menuItem.description} foodImage={menuItem.foodImage}*/
