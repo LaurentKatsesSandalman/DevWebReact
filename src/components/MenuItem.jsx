@@ -5,7 +5,7 @@ function MenuItem({ foodImage, itemName, description, price, isFavorite }) {
   const [isFavoriteState, setIsFavoriteState] = useState(isFavorite)
   //create a state isFavorite that has the inital value of isFavorite that comes from the props
 
-  const handleOnClick = () => {
+  const handleClickFavorite = () => {
     setIsFavoriteState((prevIsFavorite) => (!prevIsFavorite))
 
   }
@@ -25,7 +25,7 @@ function MenuItem({ foodImage, itemName, description, price, isFavorite }) {
               - onClick, will toggle the isFavorite state,
               - content will be conditionally rendered as "❤️" or "🖤", depending on the value of isFavorite
           */}
-      <button type="button" onClick={() => handleOnClick()}>{(isFavoriteState) ? "❤️" : "🖤"}</button>
+      <button type="button" onClick={() => handleClickFavorite()}>{(isFavoriteState) ? "❤️" : "🖤"}</button>
     </section>
   );
 }
