@@ -7,7 +7,6 @@ function MenuItem({ foodImage, itemName, description, price, isFavorite }) {
 
   const handleOnClick = () => {
     setIsFavoriteState((prevIsFavorite) => (!prevIsFavorite))
-    console.log("clic")
 
   }
 

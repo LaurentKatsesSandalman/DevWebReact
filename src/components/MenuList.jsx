@@ -1,7 +1,6 @@
 import MenuItem from './MenuItem';
 
 function MenuList({ foodItems }) {
-  console.log(foodItems);
 
   return (
     <>
