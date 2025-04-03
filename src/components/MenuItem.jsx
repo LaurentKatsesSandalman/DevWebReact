@@ -25,7 +25,7 @@ function MenuItem({ foodImage, itemName, description, price, isFavorite }) {
               - onClick, will toggle the isFavorite state,
               - content will be conditionally rendered as "❤️" or "🖤", depending on the value of isFavorite
           */}
-      <button type="button" onClick={() => handleClickFavorite()}>{(isFavoriteState) ? "❤️" : "🖤"}</button>
+      <button type="button" onClick={handleClickFavorite}>{isFavoriteState ? "❤️" : "🖤"}</button>
     </section>
   );
 }
